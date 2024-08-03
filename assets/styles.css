@@ -6,6 +6,14 @@
     --bg-100:#f1f1f1;
     --bg-200:#ffffff99;
 }
+
+.dark-theme{
+    --primary-100:#f1f1f1;
+    --accent-100: #777777;
+    --bg-100:#232323;
+    --bg-200:#33333399;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -27,6 +35,35 @@ body {
 button{
     font-family: "DM Serif Display", serif;
     font-weight: bold;
+}
+.theme{
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    width: 2em;
+    align-self: center;
+    background-color: transparent;
+    transition: all .1s ease-in-out;
+}
+.theme:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+@keyframes number-animationCurrent {
+    0% { transform: translateX(3px); }
+    100% { transform: translateX(0); }
+}
+@keyframes number-animationPrevious {
+    0% { transform: translateY(30px); }
+    100% { transform: translateY(0); }
+}
+
+.animateCurrent {
+    animation: number-animationCurrent 0.1s;
+}
+.animatePrevious {
+    animation: number-animationPrevious 0.1s;
 }
 
 .dm-serif-display-regular {
@@ -52,12 +89,13 @@ button{
     border: 1px solid #fff;
     outline: none;
     background-color: var(--bg-200);
+    animation: none;
     transition: all .1s ease-in-out;
 }
 
 .calculator button:hover{
     background-color: var(--primary-100);
-    color: #fff;
+    color: var(--bg-100);
 }
 
 .span-two{
@@ -67,7 +105,8 @@ button{
 .screen{
     grid-column: 1 / -1;
     background-color: #fff;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     display: flex;
     align-items: end;
     flex-direction: column;
@@ -80,9 +119,10 @@ button{
 .previous-operand{
     font-size: 1.5em;
     color: var(--accent-100);
+    transition: all 1s ease-in-out;
 }
 
 .current-operand{
     font-size: 2em;
-    color: var(--primary-100);
+    color: #232323;
 }
