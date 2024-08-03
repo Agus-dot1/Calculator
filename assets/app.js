@@ -122,7 +122,6 @@ numberBtn.forEach(button => {
     button.addEventListener('click', () => {
         calculator.appendNumber(button.innerText);
         calculator.updateDisplay();
-        animateButton(button);
     });
 });
 

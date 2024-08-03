@@ -53,7 +53,11 @@ button {
     cursor: pointer;
     transform: translateY(-2px);
 }
-
+footer{
+    position: absolute;
+    bottom: 0.8em;
+    color: var(--accent-100);
+}
 
 @keyframes number-animationCurrent {
     0% {
