@@ -1,27 +1,30 @@
-
 /* Normalize para todos los elementos */
-:root{
-    --primary-100:#232323;
+:root {
+    --primary-100: #232323;
     --accent-100: #555555;
-    --bg-100:#f1f1f1;
-    --bg-200:#ffffff99;
+    --bg-100: #f1f1f1;
+    --bg-200: #ffffff99;
 }
 
-.dark-theme{
-    --primary-100:#f1f1f1;
+.dark-theme {
+    --primary-100: #f1f1f1;
     --accent-100: #777777;
-    --bg-100:#232323;
-    --bg-200:#33333399;
+    --bg-100: #232323;
+    --bg-200: #33333399;
 }
 
 html {
     box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: "DM Serif Display", serif;
     font-size: 16px;
@@ -32,35 +35,50 @@ body {
     align-items: center;
     height: 100vh;
 }
-button{
+
+button {
     font-family: "DM Serif Display", serif;
     font-weight: bold;
 }
-.theme{
+
+.theme {
     position: absolute;
     top: 2em;
     right: 2em;
     font-size: 2em;
     transition: all .1s ease-in-out;
 }
-.theme:hover{
+
+.theme:hover {
     cursor: pointer;
     transform: translateY(-2px);
 }
 
 
 @keyframes number-animationCurrent {
-    0% { transform: translateX(3px); }
-    100% { transform: translateX(0); }
+    0% {
+        transform: translateX(3px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
+
 @keyframes number-animationPrevious {
-    0% { transform: translateY(30px); }
-    100% { transform: translateY(0); }
+    0% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .animateCurrent {
     animation: number-animationCurrent 0.1s;
 }
+
 .animatePrevious {
     animation: number-animationPrevious 0.1s;
 }
@@ -69,10 +87,10 @@ button{
     font-family: "DM Serif Display", serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
 
-.calculator{
+.calculator {
     display: grid;
     justify-content: center;
     align-content: center;
@@ -81,7 +99,7 @@ button{
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
 
-.calculator button{
+.calculator button {
     cursor: pointer;
     color: var(--primary-100);
     font-size: 2rem;
@@ -92,16 +110,16 @@ button{
     transition: all .1s ease-in-out;
 }
 
-.calculator button:hover{
+.calculator button:hover {
     background-color: var(--primary-100);
     color: var(--bg-100);
 }
 
-.span-two{
+.span-two {
     grid-column: span 2;
 }
 
-.screen{
+.screen {
     grid-column: 1 / -1;
     background-color: #fff;
     border-top-left-radius: 5px;
@@ -113,15 +131,15 @@ button{
     padding: 1em;
     word-wrap: break-word;
     word-break: break-all;
-} 
+}
 
-.previous-operand{
+.previous-operand {
     font-size: 1.5em;
     color: var(--accent-100);
     transition: all 1s ease-in-out;
 }
 
-.current-operand{
+.current-operand {
     font-size: 2em;
     color: #232323;
 }

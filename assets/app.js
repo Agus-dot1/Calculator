@@ -21,7 +21,7 @@ class Calculator {
     }
 
     chooseOperation(operation) {
-        if (this.operation !== operation){
+        if (this.operation !== operation) {
             this.operation = operation;
         }
         if (this.previousOperand !== '') {
@@ -35,7 +35,7 @@ class Calculator {
     }
 
     compute() {
-        if(this.currentOperand === '' || this.previousOperand === '') return;
+        if (this.currentOperand === '' || this.previousOperand === '') return;
         let computation;
         const prev = parseFloat(this.previousOperand);
         const current = parseFloat(this.currentOperand);
@@ -67,15 +67,16 @@ class Calculator {
         const integerDigits = parseFloat(stringNumber.split('.')[0]);
         const decimalDigits = stringNumber.split('.')[1];
         let integerDisplay;
-        if (isNaN(integerDigits)){
+        if (isNaN(integerDigits)) {
             integerDisplay = '';
-        } else{
+        } else {
             integerDisplay = integerDigits.toLocaleString('en', {
-                maximumFractionDigits: 0});
+                maximumFractionDigits: 0
+            });
         }
-        if (decimalDigits != null){
+        if (decimalDigits != null) {
             return `${integerDisplay}.${decimalDigits}`;
-        } else{
+        } else {
             return integerDisplay;
         }
     }
@@ -83,9 +84,9 @@ class Calculator {
     updateDisplay() {
         this.currentOperandText.innerText = this.getDisplayNumber(this.currentOperand);
         this.animateDisplayCurrent(this.currentOperandText);
-        if(this.operation != null){
+        if (this.operation != null) {
             this.previousOperandText.innerText = `${this.getDisplayNumber(this.previousOperand)} ${this.operation}`;
-        }else{
+        } else {
             this.previousOperandText.innerText = '';
         }
     }
@@ -147,12 +148,6 @@ deleteBtn.addEventListener('click', button => {
     calculator.delete();
     calculator.updateDisplay();
 });
-
-
-
-
-
-
 
 //dark mode
 var theme = document.querySelector(".theme");
