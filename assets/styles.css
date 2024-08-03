@@ -40,15 +40,14 @@ button{
     position: absolute;
     top: 2em;
     right: 2em;
-    width: 2em;
-    align-self: center;
-    background-color: transparent;
+    font-size: 2em;
     transition: all .1s ease-in-out;
 }
 .theme:hover{
     cursor: pointer;
     transform: translateY(-2px);
 }
+
 
 @keyframes number-animationCurrent {
     0% { transform: translateX(3px); }

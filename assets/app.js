@@ -160,10 +160,12 @@ var theme = document.querySelector(".theme");
 theme.addEventListener("click", function () {
     document.body.classList.toggle("dark-theme");
     if (document.body.classList.contains("dark-theme")) {
-        theme.setAttribute("src", "/assets/icons/sun-solid.svg");
-        theme.style.width = "2.55em";
+        theme.classList.remove("fa-moon");
+        theme.classList.add("fa-sun");
+        theme.style.color = "var(--primary-100)";
     } else {
-        theme.setAttribute("src", "/assets/icons/moon-solid.svg");
-        theme.style.width = "2em";
+        theme.classList.remove("fa-sun");
+        theme.classList.add("fa-moon");
+        theme.style.color = "var(--primary-100)";
     }
 })
