@@ -1,8 +1,3 @@
-@font-face {
-    font-family: "myFont";
-    src: url(/assets/font/Dune.otf) format("opentype");
-}
-
 :root {
     --primary-100: #232323;
     --accent-100: #555555;
@@ -51,7 +46,6 @@ button {
     right: 2em;
     font-size: 2em;
     transition: all .1s ease-in-out;
-    z-index: -1;
 }
 
 .theme:hover {
@@ -65,20 +59,15 @@ button {
     z-index: -1;
 }
 
-h2{
+.loader-text{
+    font-family: "DM Serif Display", serif;
     font-size: 5rem;
-    font-family: "myFont", serif;
-    letter-spacing: -5px;
+    letter-spacing: 5px;
 }
 .separator{
     font-size: 2rem;
-    letter-spacing: -5px;
-}
-
-.o{
-    position: relative;
-    top: 4rem;
-    right: .2rem;
+    letter-spacing: -1px;
+    margin-right: 5px;
 }
 
 
@@ -94,6 +83,7 @@ h2{
     background-color: white;
     animation: loaderHide .8s ease-in forwards;
     animation-delay: .5s;
+    z-index: 1;
 }
 .loader h2{
     animation: loaderOpacity .5s ease-in; 
