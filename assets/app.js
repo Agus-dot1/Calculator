@@ -162,7 +162,7 @@ theme.addEventListener("click", function () {
         theme.classList.add("fa-moon");
         theme.style.color = "var(--primary-100)";
     }
-})
+});
 //loader
 const loader = document.querySelector('.loader');
 loader.addEventListener("animationend", (event) => {
