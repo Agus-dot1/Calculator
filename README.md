@@ -2,7 +2,8 @@
 
 ## Description
 
-This project is a simple **calculator** developed for The Odin Project, you can try it at https://agus-dot1.github.io/Calculator/. It allows performing basic operations such as addition, subtraction, multiplication, and division. It's a useful tool for quick and accurate calculations.
+This project is a simple **calculator** developed for The Odin Project. It allows performing basic operations such as addition, subtraction, multiplication, and division. It's a useful tool for quick and accurate calculations.
+You can try it at https://agus-dot1.github.io/Calculator/
 
 ## Features
 
