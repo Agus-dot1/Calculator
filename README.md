@@ -1,70 +1,70 @@
-# Calculadora
+# Calculator
 
-## Descripción
+## Description
 
-Este proyecto es una **calculadora** simple desarrollada en [lenguaje de programación]. Permite realizar operaciones básicas como suma, resta, multiplicación y división. Es una herramienta útil para realizar cálculos rápidos y precisos.
+This project is a simple **calculator** developed in [programming language]. It allows performing basic operations such as addition, subtraction, multiplication, and division. It's a useful tool for quick and accurate calculations.
 
-## Características
+## Features
 
-- **Suma**: Realiza la suma de dos números.
-- **Resta**: Realiza la resta entre dos números.
-- **Multiplicación**: Realiza la multiplicación de dos números.
-- **División**: Realiza la división entre dos números, con manejo de errores para división por cero.
-- **Interfaz de usuario**: Incluye una interfaz gráfica (si aplica) para facilitar el uso.
+- **Addition**: Performs the addition of two numbers.
+- **Subtraction**: Performs the subtraction between two numbers.
+- **Multiplication**: Performs the multiplication of two numbers.
+- **Division**: Performs the division between two numbers, with error handling for division by zero.
+- **User Interface**: Includes a graphical interface (if applicable) for ease of use.
 
-## Tecnologías Utilizadas
+## Technologies Used
 
-- [Lenguaje de programación]: Especifica el lenguaje de programación utilizado (e.g., Python, Java, JavaScript).
-- [Framework/Biblioteca]: Especifica cualquier framework o biblioteca utilizada (e.g., React, Flask, Tkinter).
+- [Programming language]: Specify the programming language used (e.g., Python, Java, JavaScript).
+- [Framework/Library]: Specify any framework or library used (e.g., React, Flask, Tkinter).
 
-## Instalación
+## Installation
 
-Sigue estos pasos para clonar y ejecutar el proyecto en tu máquina local.
+Follow these steps to clone and run the project on your local machine.
 
-1. Clona el repositorio:
+1. Clone the repository:
     ```bash
-    git clone https://github.com/tu-usuario/calculadora.git
+    git clone https://github.com/your-username/calculator.git
     ```
 
-2. Navega al directorio del proyecto:
+2. Navigate to the project directory:
     ```bash
-    cd calculadora
+    cd calculator
     ```
 
-3. Instala las dependencias necesarias:
+3. Install the necessary dependencies:
     ```bash
-    # Ejemplo para Python
+    # Example for Python
     pip install -r requirements.txt
     ```
 
-4. Ejecuta la calculadora:
+4. Run the calculator:
     ```bash
-    # Ejemplo para Python
+    # Example for Python
     python main.py
     ```
 
-## Uso
+## Usage
 
-Explica brevemente cómo utilizar la calculadora una vez que esté en funcionamiento. Si tiene una interfaz gráfica, describe los controles principales.
+Briefly explain how to use the calculator once it is running. If it has a graphical interface, describe the main controls.
 
-## Contribuciones
+## Contributions
 
-Las contribuciones son bienvenidas. Si deseas contribuir, por favor sigue estos pasos:
+Contributions are welcome. If you would like to contribute, please follow these steps:
 
-1. Haz un fork del repositorio.
-2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
-3. Realiza tus cambios y haz commits (`git commit -m 'Añadir nueva funcionalidad'`).
-4. Sube tus cambios (`git push origin feature/nueva-funcionalidad`).
-5. Abre un Pull Request.
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/new-feature`).
+3. Make your changes and commit them (`git commit -m 'Add new feature'`).
+4. Push your changes (`git push origin feature/new-feature`).
+5. Open a Pull Request.
 
-## Licencia
+## License
 
-Este proyecto está bajo la licencia [Nombre de la licencia]. Ver el archivo [LICENSE](LICENSE) para más detalles.
+This project is licensed under the [License Name]. See the [LICENSE](LICENSE) file for more details.
 
-## Contacto
+## Contact
 
-Para preguntas o sugerencias, puedes contactarme en [tu-email@ejemplo.com] o visitar mi perfil en GitHub: [tu-usuario](https://github.com/tu-usuario).
+For questions or suggestions, you can contact me at [your-email@example.com] or visit my GitHub profile: [your-username](https://github.com/your-username).
 
 ---
 
-¡Gracias por usar mi calculadora! Espero que te sea de utilidad.
+Thank you for using my calculator! I hope you find it useful.
